@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tangly · Support &amp; Privacy</title>
+<meta name="description" content="Tangly: four new logic puzzles every day. Support and privacy policy.">
+<link rel="icon" href="icon.png">
+<style>
+:root{--bg:#FBF6EE;--card:#fff;--ink:#1F2340;--muted:#6B7090;--line:#E9E2D6;--accent:#FF7A4D;--violet:#6B5BD6}
+@media (prefers-color-scheme:dark){:root{--bg:#17192B;--card:#20233A;--ink:#F3F1EC;--muted:#A6AAC4;--line:#33375A}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:ui-rounded,"SF Pro Rounded",-apple-system,system-ui,sans-serif;line-height:1.6}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+header img{width:56px;height:56px;border-radius:14px}
+h1{font-size:30px;margin:0}
+.tag{color:var(--muted);margin:0 0 20px}
+.lang{display:flex;gap:6px;margin:0 0 24px}
+.lang button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 14px;font:inherit;font-weight:700;cursor:pointer}
+.lang button.on{background:var(--ink);color:var(--bg)}
+section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-bottom:16px}
+h2{font-size:20px;margin:0 0 8px}
+h3{font-size:16px;margin:18px 0 4px}
+p,li{font-size:15.5px}
+ul{padding-left:20px;margin:6px 0}
+a{color:var(--violet)}
+.mail{display:inline-block;margin-top:4px;background:var(--accent);color:#fff;text-decoration:none;font-weight:800;border-radius:999px;padding:10px 18px}
+.muted{color:var(--muted);font-size:13.5px}
+[data-lang]{display:none}
+html[lang=en] [data-lang=en],html[lang=tr] [data-lang=tr]{display:block}
+</style>
+</head>
+<body>
+<main>
+  <header><img src="icon.png" alt=""><h1>Tangly</h1></header>
+  <p class="tag" data-lang="en">Four new logic puzzles every day.</p>
+  <p class="tag" data-lang="tr">Her gün dört yeni mantık bulmacası.</p>
+  <div class="lang"><button id="b-en" onclick="setLang('en')">English</button><button id="b-tr" onclick="setLang('tr')">Türkçe</button></div>
+
+  <!-- ENGLISH -->
+  <div data-lang="en">
+    <section id="support">
+      <h2>Support</h2>
+      <p>Questions, ideas or a puzzle that looks wrong? Write to us and we'll get back to you.</p>
+      <a class="mail" href="mailto:app.tangly@gmail.com">app.tangly@gmail.com</a>
+      <h3>Common questions</h3>
+      <ul>
+        <li><b>When do new puzzles arrive?</b> At midnight, in your phone's time zone.</li>
+        <li><b>I bought Tangly Plus on another device.</b> Open ⓘ in the app and tap "Restore purchases".</li>
+        <li><b>Does solving an old puzzle from the archive count for my streak?</b> No. The streak counts days on which you solved that day's puzzle.</li>
+        <li><b>Can I move my progress to a new phone?</b> Progress is stored only on your phone. Tangly Plus can always be restored with the same Apple Account.</li>
+      </ul>
+    </section>
+    <section id="privacy">
+      <h2>Privacy Policy</h2>
+      <p class="muted">Last updated: 8 November 2026</p>
+      <p><b>Tangly does not collect any personal data.</b> There is no account, no advertising, no analytics and no tracking.</p>
+      <h3>What stays on your phone</h3>
+      <p>Your solved puzzles, times, hints, streak and settings are stored only on your device. They are never sent to us or to anyone else. Deleting the app deletes this data.</p>
+      <h3>Purchases</h3>
+      <p>Tangly Plus is sold through the App Store. Payment is handled entirely by Apple; we never see your payment details. The app only asks Apple whether this Apple Account owns Tangly Plus.</p>
+      <h3>Sharing</h3>
+      <p>When you tap Share, the app creates a short text (puzzle number, time, streak) on your phone and hands it to the share sheet you choose. Nothing is shared unless you do it.</p>
+      <h3>Children</h3>
+      <p>Tangly is suitable for all ages and collects no data from anyone, including children.</p>
+      <h3>Changes and contact</h3>
+      <p>If this policy changes, the new version will appear on this page with a new date. Questions: <a href="mailto:app.tangly@gmail.com">app.tangly@gmail.com</a>.</p>
+      <p class="muted">Developer: Caner Candemir</p>
+    </section>
+  </div>
+
+  <!-- TÜRKÇE -->
+  <div data-lang="tr">
+    <section id="destek">
+      <h2>Destek</h2>
+      <p>Bir sorun, öneri ya da yanlış görünen bir bulmaca mı var? Bize yazın, size dönelim.</p>
+      <a class="mail" href="mailto:app.tangly@gmail.com">app.tangly@gmail.com</a>
+      <h3>Sık sorulanlar</h3>
+      <ul>
+        <li><b>Yeni bulmacalar ne zaman gelir?</b> Telefonunuzun saatine göre gece yarısı.</li>
+        <li><b>Tangly Plus'ı başka bir cihazda aldım.</b> Uygulamada ⓘ'ye girip "Satın alımları geri yükle"ye basın.</li>
+        <li><b>Arşivden eski bir bulmacayı çözmek seriye sayılır mı?</b> Hayır. Seri, o günün bulmacasını o gün çözdüğünüz günleri sayar.</li>
+        <li><b>İlerlememi yeni telefona taşıyabilir miyim?</b> İlerleme yalnızca telefonunuzda saklanır. Tangly Plus aynı Apple hesabıyla her zaman geri yüklenebilir.</li>
+      </ul>
+    </section>
+    <section id="gizlilik">
+      <h2>Gizlilik Politikası</h2>
+      <p class="muted">Son güncelleme: 8 Kasım 2026</p>
+      <p><b>Tangly hiçbir kişisel veri toplamaz.</b> Hesap yok, reklam yok, analiz yok, takip yok.</p>
+      <h3>Telefonunuzda kalanlar</h3>
+      <p>Çözdüğünüz bulmacalar, süreler, ipuçları, seriniz ve ayarlarınız yalnızca cihazınızda saklanır. Bize ya da başka birine gönderilmez. Uygulamayı silmek bu verileri de siler.</p>
+      <h3>Satın almalar</h3>
+      <p>Tangly Plus App Store üzerinden satılır. Ödemeyi tamamen Apple yürütür; ödeme bilgilerinizi hiçbir zaman görmeyiz. Uygulama Apple'a yalnızca bu Apple hesabında Tangly Plus olup olmadığını sorar.</p>
+      <h3>Paylaşım</h3>
+      <p>Paylaş'a bastığınızda uygulama telefonunuzda kısa bir metin (bulmaca numarası, süre, seri) oluşturur ve seçtiğiniz paylaşım ekranına verir. Siz paylaşmadıkça hiçbir şey paylaşılmaz.</p>
+      <h3>Çocuklar</h3>
+      <p>Tangly her yaşa uygundur ve çocuklar dahil kimseden veri toplamaz.</p>
+      <h3>Değişiklikler ve iletişim</h3>
+      <p>Bu politika değişirse yeni hâli yeni tarihle bu sayfada yer alır. Sorularınız için: <a href="mailto:app.tangly@gmail.com">app.tangly@gmail.com</a>.</p>
+      <p class="muted">Geliştirici: Caner Candemir</p>
+    </section>
+  </div>
+</main>
+<script>
+function setLang(l){
+  document.documentElement.lang=l;
+  document.getElementById('b-en').classList.toggle('on',l==='en');
+  document.getElementById('b-tr').classList.toggle('on',l==='tr');
+}
+// Adres #destek / #gizlilik ise Türkçe; değilse tarayıcı diline göre.
+var h=location.hash, nav=(navigator.language||'en').toLowerCase();
+setLang(h==='#destek'||h==='#gizlilik'||(!h&&nav.indexOf('tr')===0)?'tr':'en');
+if(h){var t=document.querySelector(h); if(t) t.scrollIntoView();}
+</script>
+</body>
+</html>
